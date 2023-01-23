@@ -36,7 +36,7 @@ namespace MyDiscordBot
                 .AddSingleton(_commands)
                 .BuildServiceProvider();
 
-            string botToken = "MTA2NjY2ODI4ODcxODk0MjIwOA.GWVOq2.7NkoxcPGbS-AhhmE0A77QDEanBTw0Oj6_APvZk";
+            string botToken = "BOT_TOKEN";
 
             //event subscriptions
             _client.Log += Log;
