@@ -86,11 +86,8 @@ namespace MyDiscordBot
         private async Task MessageReceived(SocketMessage message) 
         {
             Dictionary<DateTime, string> schedule = new Dictionary<DateTime, string>();
-            schedule.Add(new DateTime(2023, 01, 23), "23-01-2023 19:00-23:00 Língua Inglesa - CRISTINA ISABEL OLIVEIRA BATISTA ");
-            schedule.Add(new DateTime(2023, 01, 24), "24-01-2023 19:00-23:00 Programação de computadores - estruturada - ANTÓNIO GUERREIRO PACHECO");
-            schedule.Add(new DateTime(2023, 01, 25), "25-01-2023 19:00-23:00 Sistema operativo servidor (plataforma proprietária) - NUNO FILIPE PESQUEIRA MARTINS CARVALHO");
-            schedule.Add(new DateTime(2023, 01, 26), "26-01-2023 19:00-23:00 Programação de computadores - estruturada - ANTÓNIO GUERREIRO PACHECO");
-            schedule.Add(new DateTime(2023, 01, 27), "27-01-2023 19:00-23:00 Matemática - CRISTINA ISABEL OLIVEIRA BATISTA ");
+            schedule.Add(new DateTime(2023, 01, 23), "23-01-2023 19:00-23:00 Língua Inglesa - Nome do Professor ");
+            
 
             var today = DateTime.Today;
             var tomorrow = today.AddDays(1);
@@ -134,9 +131,9 @@ namespace MyDiscordBot
 
             if (message.Content == "!agenda")
             {
-                if (File.Exists(@"C:\Users\Lisboa\OneDrive - Cinel\Documentos\DiscordBot\agenda\agenda.txt"))
+                if (File.Exists(@""))
                 {
-                    StreamReader LerFicheiro = File.OpenText(@"C:\Users\Lisboa\OneDrive - Cinel\Documentos\DiscordBot\agenda.txt");
+                    StreamReader LerFicheiro = File.OpenText(@"");
                     string line = null;
                     while ((line = LerFicheiro.ReadLine()) != null)
                     {
@@ -154,7 +151,7 @@ namespace MyDiscordBot
 
             //if (message.Content == "!agenda")
             //{
-            //    StreamReader LerFicheiro = File.OpenText(@"C:\Users\Lisboa\OneDrive - Cinel\Documentos\DiscordBot\agenda.txt");
+            //    StreamReader LerFicheiro = File.OpenText(@"");
             //    string line = null;
             //    while ((line = LerFicheiro.ReadLine()) != null)
             //    {
